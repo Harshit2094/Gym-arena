@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gym Website</title>
+
+	
+	<style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+        :root
+        {
+            --primary-font: 'Poppins', sans-serif;
+        
+            --primary-color: #f9ef23;   
+            --secondry-color: #141414; 
+            --third-color: #ffffff;    
+        }
+        
+        
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html
+        {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        
+        body
+        {
+            background-color: var(--secondry-color);
+            font-family: var(--primary-font);
+        }
+        
+        .container
+        {
+            padding: 1rem;
+        }
+        
+        img
+        {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .heading
+        {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 900;
+            font-style: italic;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        
+        .white
+        {
+            color: var(--third-color);
+        }
+        
+        
+        
+        .hero
+        {
+            height: 100vh;
+            background-image: url(hero-bg.png);
+            background-position: top center;
+            background-size: cover;
+        }
+        
+        .logo
+        {
+            color: var(--third-color);
+            font-weight: 800;
+        }
+        
+        .content
+        {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+        }
+        
+        .main-heading
+        {
+            color: var(--third-color);
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        
+        .main-heading span
+        {
+            color: var(--primary-color);
+        }
+        
+        .btn
+        {
+            margin-top: 1rem;
+            background-color: var(--primary-color);
+            border: none;
+            outline: none;
+            padding: 0.8rem 2rem;
+            transition: .5s;
+        
+        }
+        
+        .btn:hover
+        {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        
+        .btn a
+        {
+            color: var(--secondry-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        
+        
+        
+        
+        
+        .offer .container
+        {
+            padding: 3rem 1rem;
+        }
+        
+        .offer-card
+        {
+            height: 60vh;
+            width: 100%;
+            margin: 2rem 0;
+            background-size: cover;
+            position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .offer-tour
+        {
+            background-image: url(tour.png);
+        }
+        
+        .offer-classes
+        {
+            background-image: url(classes.png);
+        }
+        
+        .offer-training
+        {
+            background-image: url(training.png);
+        }
+        
+        .offer-name
+        {
+            color: var(--third-color);
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .testimonial .container
+        {
+            padding: 2rem 1rem;
+        }
+        
+        .review-card
+        {
+            margin: 1.5rem 0;
+        }
+        
+        .author-pic
+        {
+            height: 45vh;
+            background-size: cover;
+            background-position: top center;
+        }
+        
+        .author-pic-a
+        {
+            background-image: url(author-a.png);
+            background-position: center center;
+        }
+        
+        .author-pic-b
+        {
+            background-image: url(author-b.png);
+        }
+        
+        .author-pic-c
+        {
+            background-image: url(author-c.png);
+        }
+        
+        .review-content
+        {
+            background-color: var(--primary-color);
+            padding: 1rem;
+        }
+        
+        .author-name
+        {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        .footer-widget
+        {
+            height: 60vh;
+            background-image: url(footer-bg.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        .footer-widget .container
+        {
+            padding: 2rem 2rem;
+        }
+        
+        .footer-bottom
+        {
+            background: var(--primary-color);
+        }
+        
+        .footer-bottom .container
+        {
+            padding: 2rem 1.5rem;
+        }
+        
+        .footer-bottom .container .row .col
+        {
+            margin: 1.5rem 0;
+        }
+        
+        .contact-heading
+        {
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        
+        @media screen and (min-width: 768px)
+        {
+            .container
+            {
+                max-width: 1300px;
+                margin: 0 auto;
+            }
+        
+            .heading
+            {
+                font-size: 3.5rem;
+            }
+        
+        
+            
+            .hero .container
+            {
+                padding: 2.5rem 5rem;
+            }
+        
+            .logo
+            {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        
+            .main-heading
+            {
+                font-size: 6.5rem;
+                font-weight: 800;
+            }
+        
+            .btn a
+            {
+                font-size: 1.5rem;
+            }
+        
+        
+            
+            .about .container
+            {
+                padding: 6rem 4rem;
+            }
+        
+            .about .container .row
+            {
+                flex-direction: row;
+                gap: 5rem;
+            }
+        
+            .about-content
+            {
+                width: 40%;
+            }
+        
+            .about-img
+            {
+                width: 55%;
+            }
+        
+            .btn-link
+            {
+                font-size: 1.3rem;
+            }
+        
+        
+            .offer .container
+            {
+                padding: 1rem 4rem;
+            }
+        
+            .offer .container .heading, .offer .container .sub-heading
+            {
+                text-align: center;
+            }
+        
+            .offer .container .row
+            {
+                display: flex;
+                flex-direction: row;
+                gap: 4rem;
+                width: 100%;
+            }
+        
+            .offer .container .row .col
+            {
+                width: 100%;
+            }
+        
+            
+        
+        
+            .testimonial .container
+            {
+                padding: 6rem 4rem;
+            }
+        
+            .testimonial .container .heading
+            {
+                text-align: center;
+            }
+        
+            .testimonial .container .row
+            {
+                display: flex;
+                flex-direction: row;
+                gap: 4rem;
+                width: 100%;
+            }
+        
+        
+            
+            .footer-widget
+            {
+                height: 70vh;
+            }
+        
+            .footer-widget .container
+            {
+                padding: 6rem 4rem;
+            }
+        
+        
+            .footer-bottom .container
+            {
+                padding: 2rem 4rem;
+            }
+        
+            .footer-bottom .container .row
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+        }</style>
+
+	<!-- Ionicons icon -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <script src="project.js"></script>
+	<section class="hero">
+		<div class="container" >
+			<div class="logo">GYM ARENA</div>
+
+			<div class="content">
+				<h2 class="main-heading">Be your <span>best</span></h2>
+
+				<button class="btn">
+					<a href="FORM2.html" id="myForm">Join today</a>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col about-content">
+					<h2 class="heading">About our fit <br>family</h2>
+
+					<p class="para-line white">
+						Gym Arena was founded in 2001 by a husband and wife team, Bobby and Dora Graff. Since then, we have expanded to over 115 locations nationwide!
+					</p>
+
+					<button class="btn-link">
+						<a href="#">Learn more</a>
+					</button>
+				</div>
+				<div class="col about-img">
+					<img src="about.png" alt="About image" class="aboutImg">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="offer">
+		<div class="container">
+			<h2 class="heading">What we offer</h2>
+			<p class="sub-heading white">
+				We're committed to bringing you the best workout experience.
+			</p>
+
+			<div class="row">
+				<div class="col">
+					<div class="offer-card offer-tour">
+						<h2 class="offer-name">
+							Tour our gym
+						</h2>
+					</div>
+				</div>
+				<div class="col">
+					<div class="offer-card offer-classes">
+						<h2 class="offer-name">
+							Check out our <br>
+							group classes
+						</h2>
+					</div>
+				</div>
+				<div class="col">
+					<div class="offer-card offer-training">
+						<h2 class="offer-name">
+							Ask about <br>
+							personal training
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonial">
+		<div class="container">
+			<h2 class="heading">
+				What they say
+			</h2>
+
+			<div class="row">
+				<div class="col">
+					<div class="review-card">
+						<div class="author-pic author-pic-a"></div>
+						<div class="review-content">
+							<p class="review para-line">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nisi quibusdam? Eveniet, aut. Quae iste eum eius voluptate commodi earum rerum? Voluptas quibusdam sed illum in dolor sint, aliquid asperiores?
+							</p>
+							<p class="author-name">Nora , 31</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="review-card">
+						<div class="author-pic author-pic-b"></div>
+						<div class="review-content">
+							<p class="review para-line">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nisi quibusdam? Eveniet, aut. Quae iste eum eius voluptate commodi earum rerum? Voluptas quibusdam sed illum in dolor sint, aliquid asperiores?
+							</p>
+							<p class="author-name">Dannie kumar, 28</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="review-card">
+						<div class="author-pic author-pic-c"></div>
+						<div class="review-content">
+							<p class="review para-line">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nisi quibusdam? Eveniet, aut. Quae iste eum eius voluptate commodi earum rerum? Voluptas quibusdam sed illum in dolor sint, aliquid asperiores?
+							</p>
+							<p class="author-name">Jhonny, 44</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-widget">
+		<div class="container">
+			<h2 class="heading">
+				Get in touch <br>
+				today
+			</h2>
+		</div>
+	</footer>
+
+	<footer class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="address">
+						<h2 class="contact-heading">
+							Mailing address
+						</h2>
+						<p class="contact-para-line">
+							123 Sector 7, Chandigarh
+						</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="mail">
+						<h2 class="contact-heading">
+							Email address
+						</h2>
+						<p class="contact-para-line">
+							harshit2094@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="number">
+						<h2 class="contact-heading">
+							Phone number
+						</h2>
+						<p class="contact-para-line">
+							(+91)9876543210
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
