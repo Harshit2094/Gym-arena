@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ionicons icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="logo">GYM ARENA</div>
+
+            <div class="content">
+                <h2 class="main-heading">Be your <span>best</span></h2>
+
+                <button class="btn">
+                    <a href="#bottom">Join today</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col about-content">
+                    <h2 class="heading">About our fit <br>family</h2>
+
+                    <p class="para-line white">
+                        Gym Arena was founded in 2001 by a husband and wife team, Bobby and Dora Graff. Since then, we
+                        have expanded to over 115 locations nationwide!
+                    </p>
+
+                    <button class="btn-link">
+                        <a href="https://www.muscleandfitness.com/workouts/workout-tips/13-things-every-fitness-beginner-needs-know/">Learn more</a>
+                    </button>
+                </div>
+                <div class="col about-img">
+                    <img src="about.png" alt="About image" class="aboutImg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer">
+        <div class="container">
+            <h2 class="heading">What we offer</h2>
+            <p class="sub-heading white">
+                We're committed to bringing you the best workout experience.
+            </p>
+
+            <div class="row">
+                <div class="col">
+                    <div class="offer-card offer-tour">
+                        <h2 class="offer-name">
+                            Tour our gym
+                        </h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="offer-card offer-classes">
+                        <h2 class="offer-name">
+                            Check out our <br>
+                            group classes
+                        </h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="offer-card offer-training">
+                        <h2 class="offer-name">
+                            Ask about <br>
+                            personal training
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <h2 class="heading">
+                What they say
+            </h2>
+
+            <div class="row">
+                <div class="col">
+                    <div class="review-card">
+                        <div class="author-pic author-pic-a"></div>
+                        <div class="review-content">
+                            <p class="review para-line">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nisi quibusdam?
+                                Eveniet, aut. Quae iste eum eius voluptate commodi earum rerum? Voluptas quibusdam sed
+                                illum in dolor sint, aliquid asperiores?
+                            </p>
+                            <p class="author-name">Nora , 31</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="review-card">
+                        <div class="author-pic author-pic-b"></div>
+                        <div class="review-content">
+                            <p class="review para-line">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nisi quibusdam?
+                                Eveniet, aut. Quae iste eum eius voluptate commodi earum rerum? Voluptas quibusdam sed
+                                illum in dolor sint, aliquid asperiores?
+                            </p>
+                            <p class="author-name">Dannie kumar, 28</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="review-card">
+                        <div class="author-pic author-pic-c"></div>
+                        <div class="review-content">
+                            <p class="review para-line">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nisi quibusdam?
+                                Eveniet, aut. Quae iste eum eius voluptate commodi earum rerum? Voluptas quibusdam sed
+                                illum in dolor sint, aliquid asperiores?
+                            </p>
+                            <p class="author-name">Jhonny, 44</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-widget">
+        <div class="container">
+            <h2 class="heading">
+                Get in touch <br>
+                today
+            </h2>
+        </div>
+    </footer>
+
+    <form style="display: flex; flex-direction: column; gap: 5px; color: white; padding-inline: 10%;" id="myForm">
+        <label for="firstName">First Name:</label>
+        <input style="padding-inline-start: 5px;padding-block: 4px;" type="text" id="firstName" name="firstName"
+            required>
+
+        <label for="lastName">Last Name:</label>
+        <input style="padding-inline-start: 5px;padding-block: 4px;" type="text" id="lastName" name="lastName" required>
+
+        <label for="message">Message:</label>
+        <textarea style="padding-inline-start: 5px;padding-block: 4px;" id="message" name="message" rows="4"
+            required></textarea>
+
+        <input
+            style="padding-inline-start: 5px;padding-block: 4px; margin-block: 20px; background-color: chartreuse;color:white;cursor: pointer;"
+            type="submit" value="Submit">
+    </form>
+
+    <footer class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="address">
+                        <h2 class="contact-heading">
+                            Mailing address
+                        </h2>
+                        <p class="contact-para-line">
+                            123 Sector 7, Chandigarh
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mail">
+                        <h2 class="contact-heading">
+                            Email address
+                        </h2>
+                        <p class="contact-para-line">
+                            harshit2094@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="number">
+                        <h2 class="contact-heading">
+                            Phone number
+                        </h2>
+                        <p class="contact-para-line">
+                            (+91)9876543210
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var message = document.getElementById('message').value;
+
+
+            alert('First Name: ' + firstName + '\nLast Name: ' + lastName + '\nMessage: ' + message);
+            document.getElementById('myForm').reset()
+        });
+
+    </script>
+</body>
+
+</html>
