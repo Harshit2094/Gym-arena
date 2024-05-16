@@ -61,7 +61,7 @@ img
 .hero
 {
 	height: 100vh;
-	background-image: url(assets/hero-bg.png);
+	background-image: url(./assets/hero-bg.png);
 	background-position: top center;
 	background-size: cover;
 }
